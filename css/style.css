@@ -45,6 +45,10 @@ header.container {
     border-bottom: 1px solid #e7e9fc;
     justify-content: center; 
     align-items: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
     /*border-bottom: 1px solid var(--CORNFLOWER, #E7E9FC);*/
     background: var(--WHITE, #FFF);
     box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
@@ -55,6 +59,7 @@ header.container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 .navigation {
    /* display: flex; */
@@ -784,6 +789,7 @@ width: 360px;
     color: var(--modal-title-color);
     line-height: 1.5;
     letter-spacing: 0.02em;
+    color:#2E2F42;
   }
   
   .form_primary {
@@ -828,7 +834,6 @@ width: 360px;
   }
   .form_primary_input:focus + svg, .form_primary_textarea:focus + svg, .form_primary_input:hover + svg, .form_primary_textarea:hover + svg {
     fill: #4D5AE5;
-    fill:none ;
   }
   .form_primary_icon {
     position: absolute;

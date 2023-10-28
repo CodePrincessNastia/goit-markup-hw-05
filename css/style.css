@@ -790,13 +790,14 @@ width: 360px;
     --label-text-color: #8e8f99;
     --link-color: #4d5ae5;
   }
-  .form_primary_wrapper1 {
+  .form_primary_wrapper {
     margin-bottom: 8px;
+    /*position: relative;*/
   }
-  .form_primary_wrapper--mb16 {
-    margin-bottom: 1rem;
+  .form_primary_wrapper_textarea {
+    margin-bottom: 16px;
   }
-  .form_primary_wrapper--mb24 {
+  .form_primary_wrapper_checkbox {
     margin-bottom: 1.5rem;
   }
   .form_primary_label {
@@ -807,7 +808,7 @@ width: 360px;
     letter-spacing: 0.04em;
     color: var(--label-text-color);
   }
-  .form_primary_input-wrapper {
+  .form_primary_input_wrapper {
     position: relative;
 
   }

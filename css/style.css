@@ -720,13 +720,14 @@ width: 360px;
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 100;
+    z-index: 1;
     width: 100vw;
     height: 100vh;
     background-color: rgba(46, 47, 66, 0.4);
-    opacity: 0;
-    visibility: hidden;
+    opacity: 1;
+    visibility: visible;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
   }
   .modal.is_open {
     opacity: 1;
@@ -746,7 +747,7 @@ width: 360px;
     background-color: #FCFCFC;
     border-radius: 4px;
     box-shadow: 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  
   }
   .modal_close_button {
     position: absolute;
@@ -869,6 +870,10 @@ width: 360px;
   }
   .form_primary_link {
     color: var(--link-color);
+    
+  }
+  .form_primary_link:hover{
+    text-decoration-line: underline; 
   }
   .form_primary_checkbox_pseudo {
     width: 16px;
@@ -899,4 +904,7 @@ width: 360px;
     border-radius: 4px; 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }/*# sourceMappingURL=styles.css.map */
-  
+  .form_primary_action:hover,.form_primary_action:focus {
+    background-color: #404bbf;
+    border: none; 
+  }

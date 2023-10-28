@@ -711,7 +711,7 @@ width: 360px;
   }
   
   .modal {
-    --modal-title-color: #2E2F42;
+    -modal-title-color: #2E2F42;
     position: fixed;
     top: 0;
     left: 0;
@@ -850,7 +850,7 @@ width: 360px;
     resize: none;
     color: rgba(46, 47, 66, 0.4);
   }
-  .form_primary_checkbox:checked + .form_primary_checkbox_label .form_primary_checkbox-pseudo {
+  .form_primary_checkbox:checked + .form_primary_checkbox_label .form_primary_checkbox_pseudo {
     background-color: #404bbf;
     border: none;
     fill: #4D5AE5;

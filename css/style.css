@@ -858,11 +858,24 @@ width: 360px;
     resize: none;
     color: rgba(46, 47, 66, 0.4);
   }
-  .form_primary_checkbox:checked + /*.form_primary_checkbox_label */.form_primary_checkbox_pseudo {
+  ./*form_primary_checkbox:checked + .form_primary_checkbox_label .form_primary_checkbox_pseudo {
     background-color: #404bbf;
     border: none;
     fill: #4D5AE5;
+  }*/
+  .form_primary_checkbox_pseudo {
+    background-color: #404bbf; 
+    border: none; /* Відключення стандартного оформлення кнопки */
+    fill: #F4F4FD; /* CSS змінна для кольору іконки */
   }
+  
+  /* Стиль для вибраного (checked) чекбокса */
+   input[type="checkbox"]:checked + .form_primary_checkbox_label .form_primary_checkbox_pseudo {
+    background-color: #404bbf; /* CSS змінна для фону */
+    border: none; /* Відключення стандартного оформлення кнопки */
+    fill: #F4F4FD; /* CSS змінна для кольору іконки */
+  }
+  
   .form_primary_checkbox_label {
     color: #8E8F99;
     font-size: 0.75rem;
